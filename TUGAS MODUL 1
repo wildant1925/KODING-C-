@@ -1,0 +1,111 @@
+SOAL 4.1======================================================================================
+
+#include<iostream> 
+#include<conio.h>
+#include <stdio.h>
+int main()
+{
+printf("Selamat Datang \n");
+printf("Saya Mahasiswa STMKG Jurusan Instrumentasi\n"); 
+printf("Mari Belajar C++"); 
+getch(); 
+return (0);
+}
+
+
+SOAL 4.2==============================================================================
+
+#include <iostream>
+#include <conio.h>
+int main () 
+{
+char a [50] ="STMKG OK"; 
+printf("Nama Anda adalah %s",a);
+getch();
+}
+
+SOAL 4.3===========================================================================
+
+#include <iostream>
+#include <conio.h>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{
+	int a,b,hasil;
+	cout << "Masukkan nilia a :";
+	cin >> a;
+	
+	cout << "Masukkan nilai b :";
+	cin >> b;
+	
+	hasil =a*b;
+	cout<<"Hasil dari x*y ="<< hasil;
+	getch();
+	return(0);
+	
+}
+
+SOAL 5.1========================================================================
+
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+using namespace std;
+int main()
+{
+string nama_anda;
+printf("nama saya %s\n","tomy" );
+printf("umur saya %d tahun \n", 25); 
+printf ("siapakah nama anda :");
+getline(cin, nama_anda);
+cout<< "nama anda adalah : "<< nama_anda; 
+getch();
+return(0);
+}
+
+SOAL 5.2==========================================================================
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+main(){
+cout<<"Seorang \"Programer C\" harus sering berlatih\nJika tidak, maka akan tertinggal/gagal";
+getch();
+return 0;
+}
+
+
+SOAL 5.3========================================================================
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+main(){
+string nama;
+cout<<"Masukkan nama anda ";
+getline(cin, nama);
+cout<<"Nama anda adalah "<<nama<<", apa kabar?";
+}
+
+
+SOAL 5.4=========================================================================
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+int main(){
+float C, R, F, K; 
+cout << "Konversi Celcius ke Reamur, Farenheit, dan Kelvin"<<endl;
+cout << "Masukkan nilai C : ";
+cin >> C;
+F = (C*1.8) + 32;
+R = C*0.8;
+K = C +  273;
+cout << "Hasil konversi"<<endl;
+cout<<"F : "<<F<<endl;
+cout<<"R : "<<R<<endl;
+cout<<"K : "<<K<<endl;
+}
+
