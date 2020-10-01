@@ -1,2 +1,3 @@
 # KODING-C-
 khusus kode C++ 
+EDIT AJA KALO ADA YG SALAH 
