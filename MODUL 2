@@ -1,0 +1,102 @@
+SOAL 4.1============================
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main ()
+
+{
+	int nilai;
+	
+	char nama[12];
+	cout << "Masukkan nama anda"<<nama;
+	cin >> nama;
+	cout << "Nama anda"<< nama << endl;
+	cout << "Masukkan nilai anda" ;
+	cin >> nilai;
+	
+	if ((nilai>=60)&&(nilai<=60))
+		
+		cout << "Anda Lulus\n";
+		cout << "selamat ya.."<<endl;
+	 
+	getch ();
+	return (0);
+	
+}
+SOAL 4.2============================
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main ()
+{
+	int nilai;
+	char nama [20];
+	cout << "Masukkan nama";
+	cin >>nama;
+	cout << "Nama anda :"<<nama<<endl;
+	cout <<"Masukkan nilai anda :";
+	cin >>nilai;
+	
+if((nilai >=81)&&(nilai <=100))
+cout<<"Nilai anda A";
+
+else if((nilai >=71)&&(nilai <81))
+cout<<"Nilai anda B";
+
+else if((nilai >=61)&&(nilai <70))
+cout<<"Nilai anda C";
+
+else if((nilai >=41)&&(nilai <60))
+cout<<"Nilai anda D";
+
+else if((nilai <=40))
+cout<<"Nilai anda E";
+
+else 
+cout <<"Anda salah memasukkan nilai";
+
+
+getch();
+return(0);
+}
+SOAL 4.3============================
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	char nama [20];
+	cout << "Masukkan nama anda";
+	cin >> nama;
+	
+
+	int pilihan;
+	cout << "Nama anda adalah"<<nama<<endl;
+	cout << "-----MENU PILIHAN-----"<<endl;
+	cout << "pilihan 1 : nilai 81-100"<<endl;
+	cout << "pilihan 2 : nilai 71-80" <<endl;
+	cout << "pilihan 3 : nilai 61-70" <<endl;
+	cout << "pilihan 4 : nilai 41-60" <<endl;
+	cout << "pilihan 5 : nilai 0-40" <<endl;
+	cout << "Masukkan pilihan anda [1..5]:";
+	cin >> pilihan;
+	
+switch (pilihan)
+{
+		case 1 : cout << "Nilai Anda A";
+		break;
+		case 2 : cout << "Nilai Anda B";
+		break;
+		case 3 : cout << "Nilai Anda C";
+		break;
+		case 4 : cout << "Nilai Anda D";
+		break;
+		case 5 : cout << "Nilai Anda E";
+		break;
+	default : cout << "Anda memasukkan pilihan salah";
+}
+	getch ();
+	return(0);
+}
+SOAL 4.4============================
