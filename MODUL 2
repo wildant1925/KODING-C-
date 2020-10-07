@@ -1,4 +1,4 @@
-SOAL 4.1============================
+SOAL 4.1========================================================
 #include <iostream>
 #include <conio.h>
 
@@ -24,7 +24,7 @@ int main ()
 	return (0);
 	
 }
-SOAL 4.2============================
+SOAL 4.2========================================================
 #include <iostream>
 #include <conio.h>
 using namespace std;
@@ -60,7 +60,7 @@ cout <<"Anda salah memasukkan nilai";
 getch();
 return(0);
 }
-SOAL 4.3============================
+SOAL 4.3========================================================
 #include <iostream>
 #include <conio.h>
 using namespace std;
@@ -99,7 +99,7 @@ switch (pilihan)
 	getch ();
 	return(0);
 }
-SOAL 4.4============================
+SOAL 4.4========================================================
 #include <iostream>
 #include <conio.h>
 using namespace std;
@@ -141,4 +141,32 @@ int main()
 
 	getch ();
 	return(0);
+}
+SOAL 5.1========================================================
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int a,b ;
+	cout << "Massukan Nilai A :";
+	cin >> a;
+	cout << "Maussukan Nilai B :" ;
+	cin >> b;
+	
+	if (a%2==0)
+		{cout << a <<"adalah bilangan Genap"<<endl; 	}
+		else
+		{cout << a <<"adalah bilangan Ganjil"<<endl;	}
+	if (b%2==0)
+		{cout << b <<"adalah bilangan Genap"<<endl;		}
+		else
+		{cout << b <<"adalah bilangan Ganjil"<<endl;	}
+		
+	if (a>b)
+		{cout << "Nilai terbesar adalah"<<a<<endl;		}
+		else if (b>a)
+		{cout << "Nilai terbesar adalah"<<b<<endl;		}
+		else
+		{cout << "Angka bernilai sama";}	
 }
