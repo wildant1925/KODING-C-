@@ -100,3 +100,45 @@ switch (pilihan)
 	return(0);
 }
 SOAL 4.4============================
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int jenis_kelamin, tinggi;
+	char nama [20];
+	cout << "Masukkan nama anda :";
+	cin >> nama;
+	
+	cout << "Nama anda adalah "<<nama<<endl;
+	cout << "Jenis Kelamin anda \n"<<endl;
+	cout << "pilihan 1 :Laki-laki"<<endl;
+	cout << "pilihan 2 :Perempuan" <<endl;
+
+	cout << "Masukkan kelamin anda [1..2]:";
+	cin >> jenis_kelamin;
+	cout << "Tinggi badan anda :";
+	cin >> tinggi;
+	
+	
+	if(jenis_kelamin==1){
+     if(tinggi >= 165){
+        cout << "Anda lulus" ;
+     }
+     else if(tinggi < 165){
+        cout << " Maaf tinggi badan anda belum memenuhi syarat" ;
+     }
+ 	}
+
+	if(jenis_kelamin==2){
+     if(tinggi >= 160){
+        cout << "Anda lulus" ;
+     }
+     else if(tinggi < 160){
+        cout << " Maaf tinggi badan anda belum memenuhi syarat" ;
+     }
+     }
+
+	getch ();
+	return(0);
+}
