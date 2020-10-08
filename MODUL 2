@@ -170,3 +170,157 @@ int main ()
 		else
 		{cout << "Angka bernilai sama";}	
 }
+
+SOAL 5.2========================================================
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+using namespace std;
+
+int main ()
+{
+	int a,b,c,D ;
+	float x1,x2 ;
+	
+	cout <<"Sifat akar persamaan "<<endl;
+	printf ("*** D = 2a-4ac ***\n");
+	
+	cout << "Masukkan Nilai B :";
+	cin >> b;
+	cout << "Masukkan Nilai  A :";
+	cin >> a;
+	cout << "Masukkan Nilai  C :";
+	cin >> c;
+
+	
+	D = (b*b)-(4*a*c);
+	
+	cout <<"***TESTING***" <<endl;
+	cout <<" nilai D  :"<<D<<endl;
+
+	if (D>=0){
+		x1 = (-b+ sqrt(D)/(2*a));
+		x2 = (-b- sqrt(D)/(2*a));
+	}
+	else if (D==0){
+		x1 = (-b+ sqrt(D)/(2*a));
+		x2 = x1;
+	}
+ 	else {
+		cout <<"\n Akar imajiner"<<endl;
+		exit(0);
+	}
+
+	cout <<"X1 ="<<x1<<endl;
+	cout <<"X2 ="<<x2<<endl;
+		
+
+}
+SOAL 5.3========================================================
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+int main()
+{
+	int P, J, I, A, A1, A2,A3,total1;
+	char nama[20];
+	cout<<"    Menghitung Total Pembayaran    "<<endl;
+	cout<<"Masukan Nama Pembeli: ";
+	scanf("%[^\n]s", nama);
+	cout << "pembelian Beras 3 Kg atau lebih akan mendapat diskon 20%!!\n";
+	cout << "pembelian Gula  2 Kg atau lebih akan mendapat diskon 10%!!\n";
+	cout<<"Beli Beras Rp.5000/kg : (Kg)";
+	cin>>P;
+	cout<<"Beli Gula  Rp.7000/kg : (Kg)";
+	cin>>J;
+	I  = (P*5000);			   	//beras pembelian kurang dari 3 Kg
+	A1 = (P*5000)-(P*5000)*0.2; //beras pembelian lebih dari sama degan 3 Kg
+	A2 = (J*7000); 				//Gula pembelian kurang dari 2 Kg
+	A3 = (J*7000)-(J*7000)*0.1; //Gula pembelian lebih dari sama dengan 2 Kg
+	cout <<"\n";
+if((P<3)&&(J<2))
+	{
+	total1=I+A2;
+	cout<<"**RINCIAN PEMBAYARAN "<<nama; cout<<"**"<<endl;
+	cout<<"BERAS "<<P<< "(Kg): Rp."<<I<<endl;
+	cout<<"GULA  "<<J<< "(Kg): Rp."<<A2<<endl;
+	cout<<"TOTAL       : Rp."<<total1<<endl;
+	}
+if((P>=3)&&(J<2))
+	{
+	total1=A1+A2;
+	cout<<"**RINCIAN PEMBAYARAN "<<nama; cout<<"**"<<endl;
+	cout<<"BERAS "<<P<< "(Kg) +DISKON: Rp."<<A1<<endl;
+	cout<<"GULA  "<<J<< "(Kg): Rp."<<A2<<endl;
+	cout<<"TOTAL       : Rp."<<total1<<endl;
+	}
+if((P<3)&&(J>=2))
+	{
+	total1=I+A3;
+	cout<<"**RINCIAN PEMBAYARAN "<<nama; cout<<"**"<<endl;
+	cout<<"BERAS "<<P<< "(Kg): Rp."<<I<<endl;
+	cout<<"GULA  "<<J<< "(Kg) +DISKON: Rp."<<A3<<endl;
+	cout<<"TOTAL       : Rp."<<total1<<endl;
+	}
+if((P>=3)&&(J>=2))
+	{
+	total1=A1+A3;
+	cout<<"**RINCIAN PEMBAYARAN "<<nama; cout<<"**"<<endl;
+	cout<<"BERAS "<<P<< "(Kg) +DISKON: Rp."<<A1<<endl;
+	cout<<"GULA  "<<J<< "(Kg) +DISKON: Rp."<<A3<<endl;
+	cout<<"TOTAL       : Rp."<<total1<<endl;
+	}	
+return 0;
+}
+SOAL 5.4========================================================
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+int main()
+{
+	int P, J, I, A, A1, A2, A3, total1, total2, total3;
+	char nama[20];
+	cout<<"    Menghitung Total Gaji Karyawan    "<<endl;
+	cout<<"Masukan Nama Karyawan: ";
+	scanf("%[^\n]s", nama);
+	cout<<"Masukan Gaji Pokok : Rp.";
+	cin>>P;
+	cout<<"Jumlah anak (max 3):";
+	cin>>J;
+	
+	I = (P/100)*10;//tunjangan istri
+	A1 = (P/100)*3; //tunjangan anak pertama
+	A2 = (P/100)*3; //tunjangan anak pertama
+	A3 = (P/100)*3; //tunjangan anak pertama
+
+if(J==1)
+	{
+	total1=P+I+A1;
+	cout<<"**RINCIAN GAJI POKOK "<<nama; cout<<"**"<<endl;
+	cout<<"GAJI POKOK      : Rp."<<P<<endl;
+	cout<<"TUNJUNGAN ISTRI : Rp."<<I<<endl;
+	cout<<"TUNJANGAN 1 ANAK: Rp."<<A1<<endl;
+	cout<<"TOTAL GAJI      : Rp."<<total1<<endl;
+	}
+else if(J==2)
+	{
+	A=A1+A2;
+	total2=P+I+A;
+	cout<<"**RINCIAN GAJI POKOK "<<nama; cout<<"**"<<endl;
+	cout<<"GAJI POKOK      : Rp."<<P<<endl;
+	cout<<"TUNJUNGAN ISTRI : Rp."<<I<<endl;
+	cout<<"TUNJANGAN 2 ANAK: Rp."<<A<<endl;
+	cout<<"TOTAL GAJI      : Rp."<<total2<<endl;
+	}
+else if(J==3)
+	{
+	A=A1+A2+A3;
+	total3=P+I+A;
+	cout<<"**RINCIAN GAJI POKOK "<<nama; cout<<"**"<<endl;
+	cout<<"GAJI POKOK      : Rp."<<P<<endl;
+	cout<<"TUNJUNGAN ISTRI : Rp."<<I<<endl;
+	cout<<"TUNJANGAN 3 ANAK: Rp."<<A<<endl;
+	cout<<"TOTAL GAJI      : Rp."<<total3<<endl;
+	}
+return 0;
+}
