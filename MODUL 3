@@ -1,0 +1,151 @@
+4.1=========================================================
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main (){
+	char a [50];
+	int i=1 ,b;
+	cout << "Masukkan kata/kaliamat yang ingin diduplikasi :"<<endl;
+	cin.getline(a,sizeof(a)); 
+	cout << "Berapa kalia Anda ingin mengulang kata/kalimat ? :";
+	cin >> b;
+	cout << "Anda memasukkan :"<<a<<endl;
+	cout << "banyak duplikasi yang anda inginkan"<<b<<endl;
+	for(i;i<=b;i++){
+	 cout << a<<endl;}// for (inisalisai,loop kondisi, increment)
+	
+	cout<< a<<endl;
+	getch();
+	return 0;
+}
+4.2=========================================================
+#include <iostream>
+using namespace std;
+int main (){
+	int b;
+	char a[50];
+	cout<<"Masukkan kata yang ingin anda duplikat : ";
+	cin.getline(a, sizeof(a));
+	cout<<"Berapa kali anda ingin menduplikat "<<a<<" ? :";
+	cin>>b;	
+    while(b>0){
+    cout<<a<<endl;
+	b--;}
+	return 0;}
+
+4.3=========================================================
+#include <conio.h>
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+int main (){
+	int i =1,b;
+	cout << "berapa buah bilangan asli pertama yang ingin ada cetak ? :";
+	cin >> b;
+	cout << "banyak bilangan asli yang anda inginkan :"<<b<<endl;
+	for(i=1;i<=b;i++)
+	{ cout <<i<<endl;
+	}	//for adalah koentji!!
+	getch ();
+	return 0;
+}
+5.1=========================================================
+#include <iostream>
+using namespace std;
+int main () {
+int l,j,i,n, bil;
+//cout<<"Muhammad Wildan Zakiyyuddin/Ins 3D/41.190083"<<endl;
+
+cout <<"Masukkan rentang angka : "; 
+cin>>bil;
+cout <<"BILANGAN GANJIL PERTAMA 1 - "<<bil<<" ADALAH : "<<endl;
+
+
+for (i=1; i<bil; i=i+2){
+		cout<<i<<" ";};
+		j=1;
+		l=0;
+do {
+		l=l+j;
+		j=j+2;}
+while (j<bil);
+		cout<<endl;
+		cout<<"Jumlah bilangan ganjil dan bulat pertama = "<<l<<endl;
+return 0;
+}
+
+5.2=========================================================
+#include <iostream>
+#include <cstdlib>
+#include <windows.h>
+using namespace std;
+int main ()
+{
+    int a; // untuk nilai bilangan pertama
+    int b; // untuk nilai bilangan kedua
+    int r; // untuk pengecekan FPB
+    int kpk = 0; // nilai awal KPK untuk pengecekan
+    int i;
+
+	{ cout<<"\n Mencari FPB dan KPK"<<endl;
+      cout<<"masukkan bilangan pertama : ";cin>>a;
+      cout<<"masukkan bilangan kedua   : ";cin>>b;
+      r=a%b;
+      while (r!=0)
+      { a=b;
+        b=r;
+        r=a%b;}
+    }
+    cout<<"FPB dari A dan B adalah :" <<b<<endl; 
+
+	for(i=1;i<=b;i++){
+    kpk=kpk+a;
+    if(kpk % b==0){
+    cout<<"KPK dari A dan B adalah : "<<kpk<<endl;
+    break;}
+	}
+}
+5.3=========================================================
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main(){
+	char nama [20], alamat[50],ulangi;
+	cout <<"masukkan nama teman :";cin>>nama;
+	cout <<"masukkan alamat teman :";cin>>alamat;
+	do
+	{
+		cout <<"Nama teman anda adalah :"<<nama<<endl;
+		cout <<"alamat teman anda adalah :"<<alamat<<endl;
+		cout <<"Mau menambah teman ? (y/t))"; cin >> ulangi;
+	}
+	while (ulangi =='y');
+	
+}
+5.4=========================================================
+#include <iostream>
+#include <cstdlib>
+#include <windows.h>
+using namespace std;
+int main ()
+{
+float a, b, n, a1, a2, b1, b2; int x;
+	cout <<"Jumlah Penduduk Jatim :"; 
+	cin >>a;
+	cout <<"Jumlah Penduduk Jabar :"; 
+	cin >>b;
+ 	a1 = a*0.05;
+ 	a2 = b*0.2;
+ 	
+	while(n <= 2){
+		b1 = a;
+		b2 = b;
+		a = a+a1;
+		b = b+a2;
+		n  = b/a;
+		x ++;
+	}
+	cout<<"pada tahun ke "<<x<< " jumlah warga jabar 2 kali jumlah warga jatim"<<endl;
+	cout<<"Dengan jumlah penduduk Jatim :"<<(int)b1<< " dan jumlah penduduk Jabar sebanyak "<<(int)b2<<endl;
+	return 0;
+}
